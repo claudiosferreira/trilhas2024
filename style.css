@@ -1,1 +1,68 @@
-linguagem 
+body {
+    background-color: #001F3F; /* Navy blue background */
+    color: #000000; /* Black text color */
+    font-family: 'Roboto', sans-serif; /* Modern font */
+    margin: 0; /* Remove default margin */
+    padding: 20px; /* Add some padding */
+  }
+  
+  .container {
+    max-width: 700px; /* Set a maximum width for the container */
+    margin: 0 auto; /* Center the container horizontally */
+    background-color: #fff; /* White background for the form */
+    padding: 30px; /* Add padding inside the container */
+    border-radius: 5px; /* Add rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for the form */
+  }
+  
+  h2 {
+    text-align: center; /* Center align the heading */
+    margin-bottom: 20px; /* Add some space below the heading */
+  }
+  
+  .form-group {
+    margin-bottom: 20px; /* Add more space between form groups */
+  }
+  
+  label {
+    display: block; /* Make labels appear on separate lines */
+    margin-bottom: 5px; /* Add space below labels */
+    font-weight: bold; /* Bold text for labels */
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="url"],
+  select,
+  textarea {
+    width: 100%; /* Make input fields full width */
+    padding: 15px; /* Add more padding to input fields */
+    border: 1px solid #ccc; /* Add border to input fields */
+    border-radius: 3px; /* Add rounded corners to input fields */
+    box-sizing: border-box; /* Include padding in width calculation */
+  }
+  
+  textarea {
+    height: 100px; /* Set a default height for textarea */
+  }
+  
+  button[type="submit"] {
+    background-color: #001F3F; /* Navy blue button background */
+    color: #fff; /* White button text */
+    border: none; /* Remove button border */
+    padding: 15px 30px; /* Add more padding to button */
+    cursor: pointer; /* Indicate clickable button */
+    border-radius: 5px; /* Add rounded corners to button */
+    transition: background-color 0.2s ease-in-out; /* Smooth transition on hover */
+    margin-top: 20px; /* Add space above the button */
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #333; /* Darken button on hover */
+  }
+  
+  .form-group.optional {
+    color: #999; /* Grayed-out text for optional fields */
+  }
+  
