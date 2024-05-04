@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario para o Programa Trilhas - 2024</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <img src="https://jobs.rankdone.com/content/uploads/2021/04/12f074620d0d2606a351cc2d028d9e9178ce8e86-3.jpg" alt="Imagem representando o Programa Trilhas" width="700px" height="150px">
+    <h2>Formulario para o Programa Trilhas - 2024</h2>
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Dados Pessoais</legend>
+        <div class="form-group">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" required aria-required="true">
+        </div>
+		      <div class="form-group">
+        <label for="nome">Nome Completo:</label>
+        <input type="text" id="nome" name="nome" required>
+       </div>
+      <div class="form-group">
+        <label for="cpf">CPF:</label>
+        <input type="text" id="cpf" name="cpf" required>
+	  </div>
+      <div class="form-group">
+        <label for="data_nascimento">Data de Nascimento:</label>
+        <input type="date" id="data_nascimento" name="data_nascimento" required>
+	  </div>
+      <div class="form-group">
+        <label for="escolaridade">Escolaridade:</label>
+        <select id="escolaridade" name="escolaridade" required>
+         <option value="">Selecione</option>
+         <option value="Fundamental">Fundamental</option>
+		 <option value="Fundamental">Fundamental - Completo</option>
+         <option value="Médio">Medio Completo</option>
+		 <option value="Médio">Medio - Cursando</option>
+         <option value="Superior">Superior</option>
+		 <option value="Superior">Superior - Cursando</option>
+        </select>
+	  </div>
+      <div class="form-group">
+        <label for="endereco">Logradouro:</label>
+        <input type="text" id="endereco" name="endereco" required>	
+	 </div>
+		<div class="form-group">
+        <label for="numero">Numero:</label>
+        <input type="text" id="numero" name="numero" required>	
+	 </div>
+		<div class="form-group">
+        <label for="bairro">Bairro:</label>
+        <input type="text" id="bairro" name="bairro" required>	
+	 </div>
+		<div class="form-group">
+        <label for="cidade_uf">Cidade/UF:</label>
+        <input type="text" id="cidade_uf" name="cidade_uf" required>	
+	 </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+	  <div class="form-group">
+          <label for="login-password">Senha:</label>
+          <input type="password" id="login-password" name="login-password" required>
+        </div>
+      <div class="form-group">
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" required>
+      </div>
+      <div class="form-group">
+        <label for="area_interesse">Curso de Interesse:</label>
+        <select id="area_interesse" name="area_interesse" required>
+          <option value="">Selecione</option>
+          <option value="Desenvolvimento">Back-end</option>
+          <option value="Design">Ciencia de dados</option>
+          <option value="Marketing">Design de Experiencia</option>
+		  <option value="Marketing">Programacao de jogos</option>
+        </select>
+      </div>
+        <div class="form-group">
+        <label for="linkedin">Perfil do LinkedIn (opcional):</label>
+        <input type="url" id="linkedin" name="linkedin">
+      </div>
+	  <div class="form-group">
+        <label for="curso_formacao">Realizou outros cursos no segmento da tecnologia? Qual?:</label>
+        <input type="text" id="curso_formacao" name="curso_formacao">
+		
+      </div>
+      <button type="submit">Enviar</button>
+    </form>
+    <div class="login-links">
+      <p>Possui uma conta? <a href="#" onclick="showLoginForm()">Login</a></p>
+      <p>Esqueceu sua senha? <a href="#" onclick="showRecoverForm()">Recuperar senha</a></p>
+    </div>
+
+    <div id="login-form" style="display: none;">
+      <h3>Login</h3>
+      <form action="#" method="post">
+        <div class="form-group">
+          <label for="login-email">Email:</label>
+          <input type="email" id="login-email" name="login-email" required>
+        </div>
+        <div class="form-group">
+          <label for="login-password">Senha:</label>
+          <input type="password" id="login-password" name="login-password" required>
+        </div>
+        <button type="submit">Entrar</button>
+      </form>
+      <a href="#" onclick="hideLoginForm()">Fechar</a>
+    </div>
+
+    <div id="recover-form" style="display: none;">
+      <h3>Recuperar Senha</h3>
+      <form action="#" method="post">
+        <div class="form-group">
+          <label for="recover-email">Email:</label>
+          <input type="email" id="recover-email" name="recover-email" required>
+        </div>
+        <button type="submit">Enviar</button>
+      </form>
+      <a href="#" onclick="hideRecoverForm()">Fechar</a>
+    </div>
+    </form>
+  </div>
+  <script>
+    function showLoginForm() {
+      document.getElementById("login-form").style.display = "block";
+    }
+
+    function hideLoginForm() {
+      document.getElementById("login-form").style.display = "none";
+    }
+
+    function showRecoverForm() {
+      document.getElementById("recover-form").style.display = "block";
+    }
+
+    function hideRecoverForm() {
+      document.getElementById("recover-form").style.display = "none";
+    }
+  </script>
+</body>
+</html>
+  </div>
+</body>
+</html>
+
+<style>
+body {
+  background-color: #001F3F; /* Navy blue background */
+  color: #000000; /* Black text color */
+  font-family: 'Roboto', sans-serif; /* Modern font */
+  margin: 0; /* Remove default margin */
+  padding: 20px; /* Add some padding */
+}
+
+.container {
+  max-width: 700px; /* Set a maximum width for the container */
+  margin: 0 auto; /* Center the container horizontally */
+  background-color: #fff; /* White background for the form */
+  padding: 30px; /* Add padding inside the container */
+  border-radius: 5px; /* Add rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for the form */
+}
+
+h2 {
+  text-align: center; /* Center align the heading */
+  margin-bottom: 20px; /* Add some space below the heading */
+}
+
+.form-group {
+  margin-bottom: 20px; /* Add more space between form groups */
+}
+
+label {
+  display: block; /* Make labels appear on separate lines */
+  margin-bottom: 5px; /* Add space below labels */
+  font-weight: bold; /* Bold text for labels */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="url"],
+select,
+textarea {
+  width: 100%; /* Make input fields full width */
+  padding: 15px; /* Add more padding to input fields */
+  border: 1px solid #ccc; /* Add border to input fields */
+  border-radius: 3px; /* Add rounded corners to input fields */
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+
+textarea {
+  height: 100px; /* Set a default height for textarea */
+}
+
+button[type="submit"] {
+  background-color: #001F3F; /* Navy blue button background */
+  color: #fff; /* White button text */
+  border: none; /* Remove button border */
+  padding: 15px 30px; /* Add more padding to button */
+  cursor: pointer; /* Indicate clickable button */
+  border-radius: 5px; /* Add rounded corners to button */
+  transition: background-color 0.2s ease-in-out; /* Smooth transition on hover */
+  margin-top: 20px; /* Add space above the button */
+}
+
+button[type="submit"]:hover {
+  background-color: #333; /* Darken button on hover */
+}
+
+.form-group.optional {
+  color: #999; /* Grayed-out text for optional fields */
+}
